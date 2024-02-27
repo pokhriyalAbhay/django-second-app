@@ -1,0 +1,67 @@
+/* static/css/styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-container {
+    position: relative;
+    height: 100%;
+}
+
+#video-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 3em;
+}
+
+.content p {
+    font-size: 1.5em;
+}
+#main h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+}
+h1
+{
+    color: coral;
+}
+#every{
+    margin-top: 6rem;
+}
+#main h1 span{
+    background-color: bisque;
+    color: black;
+    border-radius: 4rem;
+}
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: plum;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}

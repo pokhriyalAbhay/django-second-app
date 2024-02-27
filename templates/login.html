@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .sign {
+      background-color: #ffd700;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 80%; /* Adjusted width */
+      max-width: 400px; /* Added max-width */
+      margin: 0 auto;
+      margin-top: 5rem;
+    }
+    .sign h1 {
+      margin-top: 0;
+    }
+    .input-group {
+      margin-bottom: 15px;
+    }
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .btn-login {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .sign {
+        width: 90%;
+      }
+    }
+    @media (max-width: 576px) {
+      .sign {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="sign">
+  <h1>Login</h1>
+  <form  method="post" action="/login">
+    {% csrf_token %}
+    <div class="input-group">
+      <input type="text" id="username" name="username" placeholder="Username">
+    </div>
+    <div class="input-group">
+      <input type="password" id="password" name="password" placeholder="Password">
+    </div>
+    <button class="btn-login" type="submit">Login</button>
+  </form>
+</div>
+
+</body>
+</html>
