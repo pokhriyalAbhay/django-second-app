@@ -1,1 +1,3 @@
 this is my second website based on django with authentication and i have also included GSAP and LOCOMOTIVE JS CDN to enhance the quality 
+The Django authentication system handles both authentication and authorization. Briefly, authentication verifies a user is who they claim to be, and authorization determines what an authenticated user is allowed to do. Here the term authentication is used to refer to both tasks.
+For more robust authentication, Django REST Framework provides integration with OAuth 2.0. OAuth is an authorization standard that allows users to grant third-party access to their data. Typically, this allows users to log in via an external OAuth provider like Google or Facebook.
